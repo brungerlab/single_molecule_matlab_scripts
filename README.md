@@ -31,9 +31,7 @@ Batch version:
 Edit the name of the directory that contains the .txt files with traces:
 `path = '<enter pathname here>';`
 
-For each displayed trace and HMM analysis, the user should pick a number between 0 and 9 specifying the number of jumps in the trace file.
-
-A spreadsheet is generated:
+For each displayed trace and HMM analysis, the user should pick a number between 0 and 9 specifying the number of jumps in the trace file. A spreadsheet is generated:
 `film2test.xlsx`
 that contains the number of jumps. 
 
@@ -46,9 +44,7 @@ matlab script file to convert smCamera .smm trajectory files to .tif format.
 Edit the name of the directory that contains the .smm files:
 `path = '<enter pathname here>';`
 	
-and then run in matlab. 
-
-For each .smm file, a .tif file is created within the same directory.
+and then run in matlab. For each .smm file, a .tif file is created within the same directory.
 
 
 ## /smCamera_conversion/smt_conversion ##
@@ -60,6 +56,4 @@ Alternative version that does not use double __ in resulting file names: `ssmt2t
 Edit the name of the directory that contains the .smt files:
 `path = '<enter pathname here>';`
 
-and then run in matlab. 
-
-For each .smt file a subdirectory is created that contains the text files for each of the traces.
+and then run in matlab. For each .smt file a subdirectory is created that contains the text files for each of the traces.
