@@ -1,5 +1,13 @@
 # single_molecule_matlab_scripts #
-single molecule matlab scripts of the Brunger lab
+Single molecule matlab scripts of the Brunger lab. 
+
+Tested with Matlab 2021b.
+
+**Installed Matlab Add-Ons:**
+*Statistics and Machine Learning Toolbox
+Image Processing Toolbox*
+
+Include these directories in the Matlab path.
 
 ## /fusion_detector ##
 matlab script to detect fusion events in time trace files
@@ -10,11 +18,21 @@ This script imports traces from putative fusions events and filters these events
 ## /HMMbatchscript ##
 matlab scripts to perform HMM analysis on single molecule trace files. 
 
-`HMM_single_file_atb.m`
 Single file version.
+`HMM_single_file_atb.m`
+Edit the name of the filename (text file) that contains the trace:
+`path=['<enter filename here>'];`
 
-`HMM_batch_atb.m`
+
 Batch version.
+`HMM_batch_atb.m`
+Edit the name of the directory that contains the .txt files with traces:
+`path = '<enter pathname here>';`
+For each displayed trace and HMM analysis, the user should pick a number between 0 and 9 specifying the number of jumps in the trace file.
+
+A spreadsheet is generated 
+`film2test.xlsx`
+that contains the number of jumps. 
 
 
 ## /smCamera_conversion/smm_conversion ##
@@ -23,7 +41,7 @@ matlab script file to convert smCamera .smm trajectory files to .tif format.
 `smm2tif_M_atb.m` 
 
 Edit the name of the directory that contains the .smm files:
-`path = <enter pathname here>;`
+`path = '<enter pathname here>';`
 	
 and then run in matlab. 
 For each .smm file, a .tif file is created within the same directory.
@@ -34,7 +52,7 @@ matlab script file to convert smCamera .smt trace files (containing traces for e
 
 `ssmt2txtFiles_atb.m` 
 Edit the name of the directory that contains the .smt files:
-`path = '/<enter pathname here>';`
+`path = '<enter pathname here>';`
 
 and then run in matlab. 
 For each .smt file a subdirectory is created that contains the text files for each of the traces.
@@ -42,7 +60,7 @@ For each .smt file a subdirectory is created that contains the text files for ea
 Alternative version that does not use double __ in resulting file names.
 `ssmt2txtFiles_atb2.m` 
 Edit the name of the directory that contains the .smt files:
-`path = '/<enter pathname here>';`
+`path = '<enter pathname here>';`
 	
 and then run in matlab. 
 For each .smt file a subdirectory is created that contains text files for each of the traces.
