@@ -18,19 +18,22 @@ This script imports traces from putative fusions events and filters these events
 ## /HMMbatchscript ##
 matlab scripts to perform HMM analysis on single molecule trace files. 
 
-Single file version.
+Single file version:
 `HMM_single_file_atb.m`
+
 Edit the name of the filename (text file) that contains the trace:
 `path=['<enter filename here>'];`
 
 
-Batch version.
+Batch version:
 `HMM_batch_atb.m`
+
 Edit the name of the directory that contains the .txt files with traces:
 `path = '<enter pathname here>';`
+
 For each displayed trace and HMM analysis, the user should pick a number between 0 and 9 specifying the number of jumps in the trace file.
 
-A spreadsheet is generated 
+A spreadsheet is generated:
 `film2test.xlsx`
 that contains the number of jumps. 
 
@@ -44,23 +47,19 @@ Edit the name of the directory that contains the .smm files:
 `path = '<enter pathname here>';`
 	
 and then run in matlab. 
+
 For each .smm file, a .tif file is created within the same directory.
 
 
 ## /smCamera_conversion/smt_conversion ##
-matlab script file to convert smCamera .smt trace files (containing traces for each detected spot) to text format.
 
-`ssmt2txtFiles_atb.m` 
+matlab script file to convert smCamera .smt trace files (containing traces for each detected spot) to text format: `ssmt2txtFiles_atb.m` 
+
+Alternative version that does not use double __ in resulting file names: `ssmt2txtFiles_atb2.m` 
+
 Edit the name of the directory that contains the .smt files:
 `path = '<enter pathname here>';`
 
 and then run in matlab. 
+
 For each .smt file a subdirectory is created that contains the text files for each of the traces.
-
-Alternative version that does not use double __ in resulting file names.
-`ssmt2txtFiles_atb2.m` 
-Edit the name of the directory that contains the .smt files:
-`path = '<enter pathname here>';`
-	
-and then run in matlab. 
-For each .smt file a subdirectory is created that contains text files for each of the traces.
