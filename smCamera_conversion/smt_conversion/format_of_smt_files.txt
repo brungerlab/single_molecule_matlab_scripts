@@ -1,0 +1,40 @@
+smCamera .smt file format
+
+(beginning of file)
+
+[Section 1: Header]
+UINT32: # of the peaks 
+UINT32: # of the frames
+UINT32: the offset (you can skip "the offset" bytes from the beginning of the file, to arrive at the start of the section 3)
+UINT8: # of the channels
+UINT16: frame width
+UINT16: frame height
+UINT32: background level
+UINT32: data scaler
+FLOAT: frame_rate
+FLOAT: peak radius
+FLOAT: peak sigma
+
+[Section 2: Peaks]
+For each peak (repeat below "# of the peaks" times)
+   For each channel (repeat below "# of the channels" times)
+      FLOAT: the X position of the peak
+      FLOAT: the std(X) of the peak
+      FLOAT: the Y position of the peak
+      FLOAT: the std(Y) of the peak
+      BOOL: is the peak a good one?
+
+[Section 3: Data]
+For each peak (repeat below "# of the peaks" times)
+   For each channel (repeat below "# of the channels" times)
+      For each frame (repeat below "# of the frames" times)
+          FLOAT: the intensity of the peak at the frame.
+
+(end of file)
+  
+
+cf.
+UINT: unsigned int
+FLOAT: 4 byte floating point number
+BOOL: 1 byte true or false
+

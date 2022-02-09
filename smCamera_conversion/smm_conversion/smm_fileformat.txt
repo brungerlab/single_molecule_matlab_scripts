@@ -1,0 +1,16 @@
+smCamera .smm file format
+-------------------------------------------- 
+
+1.At the bof (beginning of file), there will be a header of 17 bytes in length.
+2 byte integer (frame width)
+2 byte integer (frame height)
+1 byte integer (byte/pixel)
+4 byte integer (background value)
+4 byte integer (data scaler value)
+4 byte float (frame rate)
+
+2. After the 17-byte header, the rest is a train of images i.e. (frame1)(frame2)(frame3)...
+Each frame is (byte/pixel) * (frame width) * (frame height) bytes long.
+
+ImageJ allows reading raw image files like SMM. However, you have to provide offset (17 bytes), byte/pixel, width and height. 
+
