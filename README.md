@@ -12,7 +12,7 @@ Include these directories in the Matlab path.
 ## /fusion_detector ##
 matlab script to detect fusion events in time trace files
 
-`Fusion_Detector_2_0_7_JL_atb_2.m`
+`Fusion_Detector_2_0_8_JL.m`
 This script imports traces from putative fusions events and filters these events by detecting peaks and analyzing the surrounding areas. The traces for the remaining putative fusion events are plotted one at a time and the user confirms or rejects each hit. The final hits are stored in a variable called "confirmedHits." If you have two channels, channel two hits are stored in confirmedHits2 Functions GUI2.m, textBox1.m, textBox2.m, and getkey.m are required for fusionDetector.
 
 ## /HMMbatchscript ##
