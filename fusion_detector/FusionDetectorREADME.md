@@ -46,14 +46,14 @@ These variables are on the left side of the gui and separated by channel allowin
 
  \# of Baseline Frames: The number of FRAMES used to calculate a baseline fluorescence value.
  
- # of Peak Frames: The number of FRAMES used to calculate a hit.
+ \# of Peak Frames: The number of FRAMES used to calculate a hit.
  
 Noise Multiplier: How many standard deviations above the baseline must the hit value be to be considered a hit.   
 
 Delay Gap Length:  How many frames after the putative hit should the trace be reanalyzed to ensure that it is not transient. NOTE: TAKE INTO CONSIDERATION ANY PHOTOBLEACHING THAT MAY OCCURE!
 
- # of Delay Frames:  How many frames should be used to calculate the intensity after the putative Hit
+ \# of Delay Frames:  How many frames should be used to calculate the intensity after the putative Hit
  
 Delay Noise Multiplier: How many standard deviations above the baseline must the signal remain to qualify as a step-wise increase. 
 
- # Previous frames: How many frames should be skipped after a hit to avoid identifying the same hit multiple times. This is largely depends on the kinetics of your system. 
+ \# Previous frames: How many frames should be skipped after a hit to avoid identifying the same hit multiple times. This is largely depends on the kinetics of your system. 
