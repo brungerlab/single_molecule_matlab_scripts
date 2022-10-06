@@ -20,7 +20,7 @@ ChangeptsFusionDetector2.m
 Function and use:
 Hello! And welcome to the Fusion Detector 2.0.8, created by Jeremy Leitz and John Peters in the Brunger lab @ Stanford university.
 
-The fusion detector works to detect abrupt step-wise INCREASES in fluorescence data. Data is first subtracted by background, then analyzed for potential increases in fluorescence.  Increases are detected by combining two methods: First is the use of the findchangepts function added to Matlab 2017 (https://www.mathworks.com/help/signal/ref/findchangepts.html), the second is a sliding window analysis of the fluorescent traces looking for points that satisfy criteria determined by the user.  Those inputs are described briefly below and illustrated in FusionDetectorTheoryFig.png. The fusion detector assumes that the data files are organized as a 5 column text file where column #1 is time, #2 is fluorescence values of the first channel, #3 is the background fluorescence of the same channel, #4 is the fluorescence values of the second channel and #5 is the background fluorescence of the second channel. 
+The fusion detector works to detect abrupt step-wise INCREASES in fluorescence data. Data is first subtracted by background, then analyzed for potential increases in fluorescence.  Increases are detected by combining two methods: First is the use of the findchangepts function added to Matlab 2017 (https://www.mathworks.com/help/signal/ref/findchangepts.html), the second is a sliding window analysis of the fluorescent traces looking for points that satisfy criteria determined by the user.  Those inputs are described briefly below and illustrated in FusionDetectorTheoryFig.png. The fusion detector assumes that the data files are organized as a 5 column text file where column #1 is time, #2 is fluorescence value of the first channel, #3 is the background fluorescence of the same channel, #4 is the fluorescence value of the second channel and #5 is the background fluorescence of the second channel. 
 
 Upon running the detector, a gui should appear which will contain several variables that may be adjusted by the user to tailor the detector to the user's data.  
 File Type: This is the prefix of title of your data, for example if your files are called Film1_data1, Film1_data2...  Then the input here would be "Film1_data*".  Please note that the "*" is required. 
@@ -43,11 +43,17 @@ Cancel button: Exits the fusion detector.
 
 Variables used to determine a hit:
 These variables are on the left side of the gui and separated by channel allowing each channel to have different criteria, if desired.  This detector works as a sliding window checking if the average of several points, X, rises above a baseline value and if an average of points after X remain at a similarly elevated level (i.e. the increase is step-wise and not transient).
-# of Baseline Frames: The number of FRAMES used to calculate a baseline fluorescence value.
-# of Peak Frames: The number of FRAMES used to calculate a hit.
+
+ # of Baseline Frames: The number of FRAMES used to calculate a baseline fluorescence value.
+ 
+ # of Peak Frames: The number of FRAMES used to calculate a hit.
+ 
 Noise Multiplier: How many standard deviations above the baseline must the hit value be to be considered a hit.   
+
 Delay Gap Length:  How many frames after the putative hit should the trace be reanalyzed to ensure that it is not transient. NOTE: TAKE INTO CONSIDERATION ANY PHOTOBLEACHING THAT MAY OCCURE!
 
-# of Delay Frames:  How many frames should be used to calculate the intensity after the putative Hit
+ # of Delay Frames:  How many frames should be used to calculate the intensity after the putative Hit
+ 
 Delay Noise Multiplier: How many standard deviations above the baseline must the signal remain to qualify as a step-wise increase. 
-# Previous frames: How many frames should be skipped after a hit to avoid identifying the same hit multiple times. This is largely depends on the kinetics of your system. 
+
+ # Previous frames: How many frames should be skipped after a hit to avoid identifying the same hit multiple times. This is largely depends on the kinetics of your system. 
