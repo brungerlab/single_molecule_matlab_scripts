@@ -6,6 +6,7 @@ Tested with Matlab 2021b.
 **Installed Matlab Add-Ons:**
 *Statistics and Machine Learning Toolbox
 Image Processing Toolbox*
+Signal Processing Toolbox
 
 Include these directories in the Matlab path.
 
@@ -13,7 +14,7 @@ Include these directories in the Matlab path.
 matlab script to detect fusion events in time trace files
 
 `Fusion_Detector_2_0_8_JL.m`
-This script imports traces from putative fusions events and filters these events by detecting peaks and analyzing the surrounding areas. The traces for the remaining putative fusion events are plotted one at a time and the user confirms or rejects each hit. The final hits are stored in a variable called "confirmedHits." If you have two channels, channel two hits are stored in confirmedHits2 Functions GUI2.m, textBox1.m, textBox2.m, and getkey.m are required for fusionDetector.
+This script imports traces from putative fusions events and filters these events by detecting peaks and analyzing the surrounding areas. The traces for the remaining putative fusion events are plotted one at a time and the user confirms or rejects each hit. The final hits are stored in a variable called "confirmedHits." If you have two channels, channel two hits are stored in confirmedHits2 Functions GUI2.m, textBox1.m, textBox2.m, ChangeptsFusionDetector1.m, ChangeptsFusionDetector2m, DockingShared.m and getkey.m are required for fusionDetector2_0_8.
 
 ## /HMMbatchscript ##
 matlab scripts to perform HMM analysis on single molecule trace files. 
