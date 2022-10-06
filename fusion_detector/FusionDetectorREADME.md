@@ -44,7 +44,7 @@ Cancel button: Exits the fusion detector.
 Variables used to determine a hit:
 These variables are on the left side of the gui and separated by channel allowing each channel to have different criteria, if desired.  This detector works as a sliding window checking if the average of several points, X, rises above a baseline value and if an average of points after X remain at a similarly elevated level (i.e. the increase is step-wise and not transient).
 
- '#' of Baseline Frames: The number of FRAMES used to calculate a baseline fluorescence value.
+ \# of Baseline Frames: The number of FRAMES used to calculate a baseline fluorescence value.
  
  # of Peak Frames: The number of FRAMES used to calculate a hit.
  
