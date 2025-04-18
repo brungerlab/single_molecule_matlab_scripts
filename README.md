@@ -59,7 +59,7 @@ Edit the name of the directory that contains the .smt files:
 
 and then run in matlab. For each .smt file a subdirectory is created that contains the text files for each of the traces.
 
-## /smFRET_scripts##
+## /smFRET_scripts ##
 
 This directory contains scripts necessary to analyze and process the raw .pma files (written by smCamera, Lee, K.S., Ha, T. smCamera: all-in-one software package for single-molecule data acquisition and data analysis. J. Korean Phys. Soc. 86, 1–13 (2025), https://doi.org/10.1007/s40042-024-01243-z 
 ). 
