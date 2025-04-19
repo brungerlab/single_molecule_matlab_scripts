@@ -1,10 +1,8 @@
 # single_molecule_matlab_scripts #
-Single molecule matlab scripts of the Brunger lab. 
+Single molecule scripts of the Brunger lab. 
 
-Tested with Matlab 2021b.
-
-**Installed Matlab Add-Ons:**
-*Statistics and Machine Learning Toolbox
+**Note:some of the scripts require these MATLAB Add-Ons:**
+Statistics and Machine Learning Toolbox
 Image Processing Toolbox*
 Signal Processing Toolbox
 
