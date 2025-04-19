@@ -2,11 +2,10 @@
 Single molecule scripts of the Brunger lab. 
 
 **Note:some of the scripts require these MATLAB Add-Ons:**
-Statistics and Machine Learning Toolbox
-Image Processing Toolbox*
-Signal Processing Toolbox
 
-Include these directories in the Matlab path.
+Statistics and Machine Learning Toolbox
+Image Processing Toolbox
+Signal Processing Toolbox
 
 ## /fusion_detector ##
 matlab script to detect fusion events in time trace files
