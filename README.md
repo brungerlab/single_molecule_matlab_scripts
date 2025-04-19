@@ -1,8 +1,7 @@
 # single_molecule_matlab_scripts #
 Single molecule scripts of the Brunger lab. 
 
-**Note:some of the scripts require these MATLAB Add-Ons:**
-
+Note:some of the scripts require these MATLAB Add-Ons
 Statistics and Machine Learning Toolbox
 Image Processing Toolbox
 Signal Processing Toolbox
